@@ -10,3 +10,5 @@ var EntrySchema = new mongoose.Schema({
 
 var Entry = mongoose.model('Entry', EntrySchema);
 module.exports = Entry;
+
+//
