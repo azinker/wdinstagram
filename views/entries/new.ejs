@@ -1,1 +1,53 @@
-new.ejs
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <% include ../partials/head.ejs %>
+</head>
+
+<body>
+
+<div class="header">
+<p class="logo">WDInstagram</p>
+<a href="/.." title="">All Entries</a>
+<a href="/entries/new" title="">New Entry</a>
+</div>
+
+<div class="container">
+  <form action="" method="POST" role="form">
+    <legend>New</legend>
+    <div class="row">
+      <div class="form-group white_space col-md-4">
+        <label for="">Author</label>
+        <input type="text" class="form-control" id="" placeholder="Input field">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group white_space col-md-4">
+        <label for="">Date</label>
+        <input type="text" class="form-control" id="" placeholder="Input field">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="fileupload fileupload-new white_space col-md-4" data-provides="fileupload">
+        <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;">
+        </div>
+        <div>
+          <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+          <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  </form>
+
+
+</body>
+</html>
